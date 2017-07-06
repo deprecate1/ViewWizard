@@ -3,22 +3,60 @@ Begin VB.Form Form1
    AutoRedraw      =   -1  'True
    BorderStyle     =   1  'Fixed Single
    Caption         =   "ViewWizard"
-   ClientHeight    =   5655
+   ClientHeight    =   6735
    ClientLeft      =   45
    ClientTop       =   690
-   ClientWidth     =   7635
+   ClientWidth     =   7800
    Icon            =   "Form1.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MousePointer    =   99  'Custom
-   ScaleHeight     =   5655
-   ScaleWidth      =   7635
+   ScaleHeight     =   6735
+   ScaleWidth      =   7800
+   Begin VB.TextBox Text9 
+      BackColor       =   &H8000000F&
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   270
+      Left            =   1080
+      Locked          =   -1  'True
+      MousePointer    =   1  'Arrow
+      TabIndex        =   70
+      Top             =   6360
+      Width           =   6495
+   End
+   Begin VB.TextBox Text8 
+      BackColor       =   &H8000000F&
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   270
+      Left            =   1080
+      Locked          =   -1  'True
+      MousePointer    =   1  'Arrow
+      TabIndex        =   69
+      Top             =   5880
+      Width           =   6495
+   End
    Begin VB.CommandButton Command20 
       Caption         =   "关于"
       Height          =   330
       Left            =   1320
-      TabIndex        =   70
+      TabIndex        =   66
       Top             =   5280
       Width           =   1080
    End
@@ -26,7 +64,7 @@ Begin VB.Form Form1
       Caption         =   "选项..."
       Height          =   330
       Left            =   120
-      TabIndex        =   69
+      TabIndex        =   65
       Top             =   5280
       Width           =   1080
    End
@@ -43,7 +81,7 @@ Begin VB.Form Form1
       EndProperty
       Height          =   375
       Left            =   3750
-      TabIndex        =   68
+      TabIndex        =   64
       Top             =   4560
       Width           =   255
    End
@@ -53,7 +91,7 @@ Begin VB.Form Form1
       Picture         =   "Form1.frx":492A
       ScaleHeight     =   480
       ScaleWidth      =   480
-      TabIndex        =   67
+      TabIndex        =   63
       ToolTipText     =   "移动窗口"
       Top             =   5040
       Width           =   540
@@ -73,7 +111,7 @@ Begin VB.Form Form1
       Left            =   2760
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   66
+      TabIndex        =   62
       Top             =   4680
       Width           =   855
    End
@@ -92,7 +130,7 @@ Begin VB.Form Form1
       Left            =   2760
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   65
+      TabIndex        =   61
       Top             =   4320
       Width           =   855
    End
@@ -111,7 +149,7 @@ Begin VB.Form Form1
       Left            =   1560
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   62
+      TabIndex        =   58
       Top             =   4680
       Width           =   855
    End
@@ -130,7 +168,7 @@ Begin VB.Form Form1
       Left            =   1560
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   61
+      TabIndex        =   57
       Top             =   4320
       Width           =   855
    End
@@ -149,7 +187,7 @@ Begin VB.Form Form1
       Left            =   360
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   58
+      TabIndex        =   54
       Top             =   4680
       Width           =   855
    End
@@ -168,7 +206,7 @@ Begin VB.Form Form1
       Left            =   360
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   57
+      TabIndex        =   53
       Top             =   4320
       Width           =   855
    End
@@ -187,7 +225,7 @@ Begin VB.Form Form1
       Left            =   4980
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   54
+      TabIndex        =   50
       Top             =   2040
       Width           =   2505
    End
@@ -206,7 +244,7 @@ Begin VB.Form Form1
       Left            =   4980
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   53
+      TabIndex        =   49
       Top             =   1680
       Width           =   2505
    End
@@ -225,7 +263,7 @@ Begin VB.Form Form1
       Left            =   4980
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   50
+      TabIndex        =   46
       Top             =   1320
       Width           =   2505
    End
@@ -244,7 +282,7 @@ Begin VB.Form Form1
       Left            =   4980
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   43
+      TabIndex        =   39
       Top             =   960
       Width           =   2505
    End
@@ -254,7 +292,7 @@ Begin VB.Form Form1
       Picture         =   "Form1.frx":55F4
       ScaleHeight     =   480
       ScaleWidth      =   480
-      TabIndex        =   40
+      TabIndex        =   36
       ToolTipText     =   "拖动进行查找"
       Top             =   5040
       Width           =   540
@@ -278,7 +316,7 @@ Begin VB.Form Form1
       EndProperty
       Height          =   405
       Left            =   4140
-      TabIndex        =   33
+      TabIndex        =   29
       Top             =   2400
       Width           =   3435
    End
@@ -286,7 +324,7 @@ Begin VB.Form Form1
       Caption         =   "修改窗口标题"
       Height          =   330
       Left            =   4140
-      TabIndex        =   32
+      TabIndex        =   28
       Top             =   2880
       Width           =   1575
    End
@@ -294,7 +332,7 @@ Begin VB.Form Form1
       Caption         =   "发送到组合框"
       Height          =   330
       Left            =   5820
-      TabIndex        =   31
+      TabIndex        =   27
       Top             =   2880
       Width           =   1575
    End
@@ -313,21 +351,21 @@ Begin VB.Form Form1
       Left            =   4980
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   30
+      TabIndex        =   26
       Top             =   600
       Width           =   2505
    End
    Begin VB.Frame Frame2 
       Height          =   2325
       Left            =   4140
-      TabIndex        =   23
+      TabIndex        =   19
       Top             =   3240
       Width           =   3435
       Begin VB.CommandButton Command17 
          Caption         =   "结束线程"
          Height          =   330
          Left            =   1200
-         TabIndex        =   46
+         TabIndex        =   42
          Top             =   1890
          Width           =   960
       End
@@ -335,7 +373,7 @@ Begin VB.Form Form1
          Caption         =   "强制关闭"
          Height          =   330
          Left            =   2280
-         TabIndex        =   45
+         TabIndex        =   41
          Top             =   1470
          Width           =   960
       End
@@ -343,7 +381,7 @@ Begin VB.Form Form1
          Caption         =   "退出线程"
          Height          =   330
          Left            =   105
-         TabIndex        =   44
+         TabIndex        =   40
          Top             =   1890
          Width           =   960
       End
@@ -351,7 +389,7 @@ Begin VB.Form Form1
          Caption         =   "销毁"
          Height          =   330
          Left            =   1200
-         TabIndex        =   41
+         TabIndex        =   37
          Top             =   1470
          Width           =   960
       End
@@ -359,7 +397,7 @@ Begin VB.Form Form1
          Caption         =   "结束进程"
          Height          =   330
          Left            =   2280
-         TabIndex        =   39
+         TabIndex        =   35
          Top             =   1890
          Width           =   960
       End
@@ -367,7 +405,7 @@ Begin VB.Form Form1
          Caption         =   "取消置顶"
          Height          =   330
          Left            =   1200
-         TabIndex        =   38
+         TabIndex        =   34
          Top             =   1050
          Width           =   960
       End
@@ -375,7 +413,7 @@ Begin VB.Form Form1
          Caption         =   "恢复"
          Height          =   330
          Left            =   2280
-         TabIndex        =   37
+         TabIndex        =   33
          Top             =   1050
          Width           =   960
       End
@@ -383,7 +421,7 @@ Begin VB.Form Form1
          Caption         =   "屏蔽"
          Height          =   330
          Left            =   2280
-         TabIndex        =   36
+         TabIndex        =   32
          Top             =   630
          Width           =   960
       End
@@ -391,7 +429,7 @@ Begin VB.Form Form1
          Caption         =   "隐藏"
          Height          =   330
          Left            =   1200
-         TabIndex        =   35
+         TabIndex        =   31
          Top             =   630
          Width           =   960
       End
@@ -399,7 +437,7 @@ Begin VB.Form Form1
          Caption         =   "显示"
          Height          =   330
          Left            =   105
-         TabIndex        =   34
+         TabIndex        =   30
          Top             =   630
          Width           =   960
       End
@@ -407,7 +445,7 @@ Begin VB.Form Form1
          Caption         =   "最小化"
          Height          =   330
          Left            =   105
-         TabIndex        =   28
+         TabIndex        =   24
          Top             =   210
          Width           =   960
       End
@@ -415,7 +453,7 @@ Begin VB.Form Form1
          Caption         =   "最大化"
          Height          =   330
          Left            =   1200
-         TabIndex        =   27
+         TabIndex        =   23
          Top             =   210
          Width           =   960
       End
@@ -423,7 +461,7 @@ Begin VB.Form Form1
          Caption         =   "正常"
          Height          =   330
          Left            =   2280
-         TabIndex        =   26
+         TabIndex        =   22
          Top             =   210
          Width           =   960
       End
@@ -431,7 +469,7 @@ Begin VB.Form Form1
          Caption         =   "关闭"
          Height          =   330
          Left            =   105
-         TabIndex        =   25
+         TabIndex        =   21
          Top             =   1470
          Width           =   960
       End
@@ -439,7 +477,7 @@ Begin VB.Form Form1
          Caption         =   "置顶"
          Height          =   330
          Left            =   105
-         TabIndex        =   24
+         TabIndex        =   20
          Top             =   1050
          Width           =   960
       End
@@ -459,7 +497,7 @@ Begin VB.Form Form1
       Left            =   6600
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   20
+      TabIndex        =   16
       Top             =   240
       Width           =   855
    End
@@ -478,7 +516,7 @@ Begin VB.Form Form1
       Left            =   4920
       Locked          =   -1  'True
       MousePointer    =   1  'Arrow
-      TabIndex        =   19
+      TabIndex        =   15
       Top             =   233
       Width           =   855
    End
@@ -492,7 +530,7 @@ Begin VB.Form Form1
       Caption         =   "窗口信息"
       Height          =   4095
       Left            =   50
-      TabIndex        =   9
+      TabIndex        =   7
       Top             =   120
       Width           =   3975
       Begin VB.TextBox Text15 
@@ -510,7 +548,7 @@ Begin VB.Form Form1
          Left            =   1080
          Locked          =   -1  'True
          MousePointer    =   1  'Arrow
-         TabIndex        =   48
+         TabIndex        =   44
          Top             =   1440
          Width           =   2655
       End
@@ -529,46 +567,8 @@ Begin VB.Form Form1
          Left            =   1080
          Locked          =   -1  'True
          MousePointer    =   1  'Arrow
-         TabIndex        =   5
-         Top             =   2520
-         Width           =   2655
-      End
-      Begin VB.TextBox Text9 
-         BackColor       =   &H8000000F&
-         BeginProperty Font 
-            Name            =   "Tahoma"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   270
-         Left            =   1080
-         Locked          =   -1  'True
-         MousePointer    =   1  'Arrow
-         TabIndex        =   4
-         Top             =   2145
-         Width           =   2655
-      End
-      Begin VB.TextBox Text8 
-         BackColor       =   &H8000000F&
-         BeginProperty Font 
-            Name            =   "Tahoma"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   270
-         Left            =   1080
-         Locked          =   -1  'True
-         MousePointer    =   1  'Arrow
          TabIndex        =   3
-         Top             =   1800
+         Top             =   2520
          Width           =   2655
       End
       Begin VB.TextBox Text1 
@@ -604,7 +604,7 @@ Begin VB.Form Form1
          Left            =   1080
          Locked          =   -1  'True
          MousePointer    =   1  'Arrow
-         TabIndex        =   8
+         TabIndex        =   6
          Top             =   3600
          Width           =   2655
       End
@@ -661,7 +661,7 @@ Begin VB.Form Form1
          Left            =   1080
          Locked          =   -1  'True
          MousePointer    =   1  'Arrow
-         TabIndex        =   6
+         TabIndex        =   4
          Top             =   2880
          Width           =   2655
       End
@@ -680,7 +680,7 @@ Begin VB.Form Form1
          Left            =   1080
          Locked          =   -1  'True
          MousePointer    =   1  'Arrow
-         TabIndex        =   7
+         TabIndex        =   5
          Top             =   3240
          Width           =   2655
       End
@@ -689,7 +689,7 @@ Begin VB.Form Form1
          Caption         =   "窗口类值"
          Height          =   180
          Left            =   240
-         TabIndex        =   47
+         TabIndex        =   43
          Top             =   1440
          Width           =   720
       End
@@ -698,34 +698,16 @@ Begin VB.Form Form1
          Caption         =   "窗口ID"
          Height          =   180
          Left            =   240
-         TabIndex        =   18
+         TabIndex        =   14
          Top             =   2535
          Width           =   540
-      End
-      Begin VB.Label Label9 
-         AutoSize        =   -1  'True
-         Caption         =   "扩展样式"
-         Height          =   180
-         Left            =   240
-         TabIndex        =   17
-         Top             =   2160
-         Width           =   720
-      End
-      Begin VB.Label Label8 
-         AutoSize        =   -1  'True
-         Caption         =   "窗口样式"
-         Height          =   180
-         Left            =   240
-         TabIndex        =   16
-         Top             =   1815
-         Width           =   720
       End
       Begin VB.Label Label1 
          AutoSize        =   -1  'True
          Caption         =   "窗口句柄"
          Height          =   180
          Left            =   240
-         TabIndex        =   15
+         TabIndex        =   13
          Top             =   375
          Width           =   720
       End
@@ -734,7 +716,7 @@ Begin VB.Form Form1
          Caption         =   "父窗标题"
          Height          =   180
          Left            =   240
-         TabIndex        =   14
+         TabIndex        =   12
          Top             =   3600
          Width           =   720
       End
@@ -743,7 +725,7 @@ Begin VB.Form Form1
          Caption         =   "窗口类名"
          Height          =   180
          Left            =   240
-         TabIndex        =   13
+         TabIndex        =   11
          Top             =   1080
          Width           =   720
       End
@@ -752,7 +734,7 @@ Begin VB.Form Form1
          Caption         =   "窗口标题"
          Height          =   180
          Left            =   240
-         TabIndex        =   12
+         TabIndex        =   10
          Top             =   720
          Width           =   720
       End
@@ -763,7 +745,7 @@ Begin VB.Form Form1
          Left            =   240
          MouseIcon       =   "Form1.frx":61B6
          MousePointer    =   99  'Custom
-         TabIndex        =   11
+         TabIndex        =   9
          Top             =   2895
          Width           =   720
       End
@@ -772,17 +754,35 @@ Begin VB.Form Form1
          Caption         =   "父窗类名"
          Height          =   180
          Left            =   240
-         TabIndex        =   10
+         TabIndex        =   8
          Top             =   3255
          Width           =   720
       End
+   End
+   Begin VB.Label Label9 
+      AutoSize        =   -1  'True
+      Caption         =   "扩展样式"
+      Height          =   180
+      Left            =   120
+      TabIndex        =   68
+      Top             =   6360
+      Width           =   720
+   End
+   Begin VB.Label Label8 
+      AutoSize        =   -1  'True
+      Caption         =   "窗口样式"
+      Height          =   180
+      Left            =   120
+      TabIndex        =   67
+      Top             =   5880
+      Width           =   720
    End
    Begin VB.Label Label23 
       AutoSize        =   -1  'True
       Caption         =   "下"
       Height          =   180
       Left            =   2520
-      TabIndex        =   64
+      TabIndex        =   60
       Top             =   4680
       Width           =   180
    End
@@ -791,7 +791,7 @@ Begin VB.Form Form1
       Caption         =   "右"
       Height          =   180
       Left            =   2520
-      TabIndex        =   63
+      TabIndex        =   59
       Top             =   4320
       Width           =   180
    End
@@ -800,7 +800,7 @@ Begin VB.Form Form1
       Caption         =   "高"
       Height          =   180
       Left            =   1320
-      TabIndex        =   60
+      TabIndex        =   56
       Top             =   4725
       Width           =   180
    End
@@ -809,7 +809,7 @@ Begin VB.Form Form1
       Caption         =   "宽"
       Height          =   180
       Left            =   1320
-      TabIndex        =   59
+      TabIndex        =   55
       Top             =   4365
       Width           =   180
    End
@@ -818,7 +818,7 @@ Begin VB.Form Form1
       Caption         =   "上"
       Height          =   180
       Left            =   120
-      TabIndex        =   56
+      TabIndex        =   52
       Top             =   4725
       Width           =   180
    End
@@ -827,7 +827,7 @@ Begin VB.Form Form1
       Caption         =   "左"
       Height          =   180
       Left            =   120
-      TabIndex        =   55
+      TabIndex        =   51
       Top             =   4365
       Width           =   180
    End
@@ -838,7 +838,7 @@ Begin VB.Form Form1
       Left            =   4140
       MouseIcon       =   "Form1.frx":6308
       MousePointer    =   99  'Custom
-      TabIndex        =   52
+      TabIndex        =   48
       Top             =   2085
       Width           =   720
    End
@@ -847,7 +847,7 @@ Begin VB.Form Form1
       Caption         =   "模块名称"
       Height          =   180
       Left            =   4140
-      TabIndex        =   51
+      TabIndex        =   47
       Top             =   1725
       Width           =   720
    End
@@ -856,7 +856,7 @@ Begin VB.Form Form1
       Caption         =   "实例句柄"
       Height          =   180
       Left            =   4140
-      TabIndex        =   49
+      TabIndex        =   45
       Top             =   1365
       Width           =   720
    End
@@ -867,7 +867,7 @@ Begin VB.Form Form1
       Left            =   4140
       MouseIcon       =   "Form1.frx":645A
       MousePointer    =   99  'Custom
-      TabIndex        =   42
+      TabIndex        =   38
       Top             =   960
       Width           =   720
    End
@@ -876,7 +876,7 @@ Begin VB.Form Form1
       Caption         =   "进程名称"
       Height          =   180
       Left            =   4140
-      TabIndex        =   29
+      TabIndex        =   25
       Top             =   600
       Width           =   720
    End
@@ -894,7 +894,7 @@ Begin VB.Form Form1
       EndProperty
       Height          =   195
       Left            =   6000
-      TabIndex        =   22
+      TabIndex        =   18
       Top             =   278
       Width           =   525
    End
@@ -912,7 +912,7 @@ Begin VB.Form Form1
       EndProperty
       Height          =   195
       Left            =   4320
-      TabIndex        =   21
+      TabIndex        =   17
       Top             =   278
       Width           =   525
    End
@@ -1085,7 +1085,7 @@ ConfigFile = App.Path & "\Settings.ini"
 GetSettingsInfo
 Me.Width = IIf(NormalSize, 4155, 7715)
 Command18.Caption = IIf(NormalSize, ">", "<")
-Me.Height = 6135
+Me.Height = 8135
 Me.Move (Screen.Width - Me.Width) / 2, (Screen.Height - Me.Height) / 2
 Me.Caption = "ViewWizard " & App.Major & "." & App.Minor & "." & App.Revision
 MakeFlatTextbox '设置平滑文本框
